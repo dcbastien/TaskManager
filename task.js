@@ -1,6 +1,9 @@
 //For selecting task
 const end = `CLOSE`
 const tasks = `TASKS`
+const taskmes = `
+Charge Mac Book
+Master JavaScript`
 const add = `NEW`
 const remove = `REMOVE`
 const taskmanager = 
@@ -23,17 +26,24 @@ while (restarttask) {
 option = prompt(taskmanager);
 
     if (option === end) { alert (`Thank you for using Task Manager`);
+
 break;
 
-    } if  (option === tasks) {alert (`
-Charge Mac Book
-Master JavaScript`);
+    } if  (option === tasks) {alert (taskmes);
 
+    } if (option === add) { 
+        option = prompt (`Please enter the new task:`)
+    alert (`"${option}" has been added!`)
+    prompt (taskmanager)
+    alert (`${taskmes}\n${option}`)
 
+    
+    
     } else if (!option === end || !option === tasks) {
           option = prompt(taskmanager);
         }
-  } 
+
+  
 
 
 
@@ -51,4 +61,4 @@ Master JavaScript`);
 
 // //if REMOVE is the users selection --> START MENU
 
- 
+    }
