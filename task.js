@@ -1,12 +1,8 @@
 //For selecting task
-let restarttask = true;
-let option;
-const close = `CLOSE`
+const end = `CLOSE`
 const tasks = `TASKS`
 const add = `NEW`
 const remove = `REMOVE`
-
-
 const taskmanager = 
 `TASK MANAGER
 What would you like to do (Please enter one of the options below):
@@ -18,17 +14,23 @@ What would you like to do (Please enter one of the options below):
 
 ;
 
+let restarttask = true;
+let option;
+
+
+
 while (restarttask) {
 option = prompt(taskmanager);
-    if (option === close) { alert (`Thank you for using Task Manager`)
-    break;
-    } else if
-      (option === tasks) {alert (`
+
+    if (option === end) { alert (`Thank you for using Task Manager`);
+break;
+
+    } if  (option === tasks) {alert (`
 Charge Mac Book
-Master JavaScript`)
-prompt (taskmanager)
-break;   
-        } else {
+Master JavaScript`);
+
+
+    } else if (!option === end || !option === tasks) {
           option = prompt(taskmanager);
         }
   } 
